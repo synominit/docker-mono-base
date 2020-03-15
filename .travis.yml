@@ -11,7 +11,10 @@ script:
   - docker build -t docker-mono .
 
   # Test running the container.
-  - docker run --name test-container -d  docker-mono
+  - docker run -it docker-mono /bin/sh
 
   # Verify Mono is available in the container.
-  - docker exec --tty test-container env TERM=xterm mono --version
+  - mono --version
+
+  # Complete
+  #- exit
