@@ -2,7 +2,7 @@
 
 # Mono Base Container using Alpine Linux
 
-The goal of this project is to create a containerized Mono Base using Alpine Linux
+The goal of this project is to create a containerized minimal attack surface area Mono base image using Alpine Linux
 
 ## Tags
 mono
@@ -19,12 +19,12 @@ This image is built on Docker Hub automatically any time the upstream OS contain
 ## How to Use
 
   1. [Install Docker](https://docs.docker.com/engine/installation/).
-  2. Pull this image from Docker Hub: docker pull synominit/docker-mono-base
-  3. Run a container from the image:
+  2. Pull this image from Docker Hub: `docker pull synominit/docker-mono-base`
+  3. Run a container from the image: `docker run -it /bin/sh`
 
 
 ## Notes
-
+This is the base image that other images like radarr, sonarr, etc. will be used to build from.
 
 
 ## Author
