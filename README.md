@@ -1,6 +1,6 @@
+[![Build Status](https://travis-ci.com/synominit/docker-mono-base.svg?token=UxNrdTp4uZjxLv6pUq4x&branch=master)](https://travis-ci.com/synominit/docker-mono-base)
+
 # Mono Base Container using Alpine Linux
-
-
 
 The goal of this project is to create a containerized Mono Base using Alpine Linux
 
