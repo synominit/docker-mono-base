@@ -10,11 +10,8 @@ script:
   # Test building Dockerfile.
   - docker build -t docker-mono .
 
-  # Test running the container.
-  - docker run -it docker-mono /bin/sh
-
-  # Verify Mono is available in the container.
-  - mono --version
+  # Test running the container and verify mono is available
+  - docker run -it docker-mono /bin/sh -c "mono --version"
 
   # Complete
   #- exit
